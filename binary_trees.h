@@ -3,12 +3,12 @@
 
 #include <stdio.h>
 #include <stddef.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * struct binary_tree_s - Binary tree node
- * @n: Integer stored in the node
+ * @n: An Integer stored in the node
  * @parent: The Pointer to the parent node
  * @left: This is the pointer to the left child node
  * @right: This is the Pointer to the right child node
@@ -36,10 +36,10 @@ typedef struct levelorder_queue_s
 	struct levelorder_queue_s *next;
 } levelorder_queue_t;
 
-/* Printing helper function */
+/* Printing the helper function */
 void binary_tree_print(const binary_tree_t *);
 
-/* Task function prototypes */
+/* The prototypes */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
